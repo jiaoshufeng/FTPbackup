@@ -1,0 +1,32 @@
+#######FTP增量备份客户端#######
+
+
+目录结构：
+        FTPbackup/
+        |-- bin/
+        |   |-- run.py              #程序运行文件
+        |
+        |-- conf/
+        |   |-- setting.py          #配置文件
+        |   |-- historyfile.json    #存放历史备份文件
+        |   |-- wechat.json         #存放企业微信access_token
+        |
+        |-- core/
+        |   |-- Email.py            #邮箱类文件
+        |   |-- filelist.py         #备份目录文件列表
+        |   |-- Ftp.py              #FTP类
+        |   |-- Main.py             #主函数
+        |   |-- public.py           #发送消息对接第三方平台
+        |   |-- wechat.py           #企业微信类
+        |
+        |-- log
+        |   |-- Log.py              #日志函数
+        |   |-- log.txt             #默认日志文件
+        |
+        |--requirements.txt         #程序依赖软件包
+        |-- README                  #说明
+
+启动前先下载requests模块
+本程序为FTP增量备份工具，使用前先进行配置setting文件，通过FTP备份成功后将消息发送至邮箱，企业微信等
+在进行FTP上传时使用了线程池连接，增加多个文件备份的效率，通过bin/run.py进行启动，结合定时任务进行使用
+
