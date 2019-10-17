@@ -18,6 +18,7 @@
         |   |-- Main.py             #主函数
         |   |-- public.py           #发送消息对接第三方平台
         |   |-- wechat.py           #企业微信类
+        |   |-- dingding.py         #钉钉机器人
         |
         |-- log
         |   |-- Log.py              #日志函数
