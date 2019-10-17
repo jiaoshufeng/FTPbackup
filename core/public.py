@@ -21,4 +21,6 @@ def send_message(message_list):
         mywechat = Wechat()
         mywechat.send_message(message_list)
     if DINGTALK:
-        pass
+        from core.dingding import DingTalk
+        dingtalk = DingTalk
+        dingtalk.send(message_list)

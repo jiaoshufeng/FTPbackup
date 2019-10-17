@@ -48,3 +48,4 @@ agentid = ''
 
 ###########钉钉机器人配置##########
 DINGTALK = False
+webhook = ''
