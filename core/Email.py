@@ -38,6 +38,6 @@ class Mymail:
                 self.sender, self.receivers, self.message(message_list).as_string())
             # 退出
             smtpObj.quit()
-            print('Mail sent successfully')
+            return 'Mail sent successfully'
         except smtplib.SMTPException as e:
-            print('Mail failed to send')
+            return 'Mail failed to send'

@@ -1,5 +1,5 @@
 from conf.setting import *
-
+from log.Log import log_info
 
 def send_message(message_list):
     """
@@ -15,12 +15,15 @@ def send_message(message_list):
     if EMAIL:
         from core.Email import Mymail
         mymail = Mymail()
-        mymail.send_to(message_list)
+        ret = mymail.send_to(message_list)
+        log_info(ret)
     if WECHAT:
         from  core.wechat import Wechat
         mywechat = Wechat()
-        mywechat.send_message(message_list)
+        ret = mywechat.send_message(message_list)
+        log_info(ret)
     if DINGTALK:
         from core.dingding import DingTalk
         dingtalk = DingTalk
-        dingtalk.send(message_list)
+        ret = dingtalk.send(message_list)
+        log_info(ret)
