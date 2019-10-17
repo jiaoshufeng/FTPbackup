@@ -3,6 +3,9 @@
 BACKUPDIR = r'D:\python\脚本\test'
 # 远程备份目录
 REMOTEPATH = 'testbak'
+#设置全备日期（周）
+"""0:周日，1：周一，2：周二.....6:周六"""
+FULLWEEKDAY = 0
 
 ##########日志文件配置###########
 """

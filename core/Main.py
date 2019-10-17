@@ -4,7 +4,7 @@ from core.public import send_message
 from concurrent.futures import ThreadPoolExecutor
 from core.Ftp import Ftpclient
 from log.Log import log_info
-import os, datetime, json
+import os, datetime, json, datetime
 
 
 def ftp_theadpool(func, file_list, remotedirname):
@@ -20,7 +20,23 @@ def ftp_theadpool(func, file_list, remotedirname):
         pool.submit(func, os.path.join(remotedirname, filename), localpath)
     pool.shutdown()
 
+def foo(func):
+    """
+    装饰器函数，以周为单位设置全备日期
+    :param func:
+    :return:
+    """
+    def fullback():
+        d = datetime.datetime.now()
+        weekday = d.weekday()
+        if weekday == FULLWEEKDAY:
+            historyfilepath = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'conf', 'historyfile.json')
+            with open(historyfilepath, 'w') as historyfilename:
+                json.dump({"historylist": []}, historyfilename)
+        func()
+    return fullback
 
+@foo
 def filter():
     """
     对备份文件进行过滤避免重复上传，只上传新增的文件
