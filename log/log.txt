@@ -1,263 +1,34 @@
-2019-10-16 10:36:18, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 10:36:18, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 10:38:17, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 10:38:17, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 10:38:17, Log.py, ERROR, the JSON object must be str, bytes or bytearray, not list
-2019-10-16 10:39:35, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 10:39:35, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 10:39:35, Log.py, ERROR, Expecting property name enclosed in double quotes: line 1 column 3 (char 2)
-2019-10-16 10:40:04, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 10:40:04, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 10:40:04, Log.py, ERROR, Expecting property name enclosed in double quotes: line 1 column 3 (char 2)
-2019-10-16 10:40:23, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 10:40:23, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 10:40:23, Log.py, ERROR, Expecting property name enclosed in double quotes: line 1 column 3 (char 2)
-2019-10-16 10:41:13, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 10:41:13, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 10:41:13, Log.py, ERROR, Expecting property name enclosed in double quotes: line 1 column 3 (char 2)
-2019-10-16 10:43:30, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 10:43:30, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 10:43:30, Log.py, ERROR, expected str, bytes or os.PathLike object, not list
-2019-10-16 10:45:44, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 10:45:44, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 10:45:44, Log.py, ERROR, sequence item 0: expected str instance, dict found
-2019-10-16 10:46:19, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 10:46:19, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 10:46:19, Log.py, ERROR, sequence item 0: expected str instance, dict found
-2019-10-16 10:47:34, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 10:47:34, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 10:47:34, Log.py, ERROR, sequence item 0: expected str instance, dict found
-2019-10-16 10:54:31, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 10:54:31, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 10:56:45, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 10:56:45, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 10:56:45, Log.py, ERROR, 'str' object has no attribute 'jion'
-2019-10-16 10:57:13, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 10:57:13, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 10:57:54, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 10:57:54, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 11:27:42, Log.py, ERROR, user Authentication failed
-2019-10-16 14:07:36, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 14:07:36, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 14:15:02, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 14:15:02, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 14:16:01, Log.py, INFO, upload file complete testbak\2019-10-16\test04.txt
-2019-10-16 14:26:37, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 14:26:37, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 14:26:37, Log.py, INFO, upload file complete testbak\2019-10-16\test04.txt
-2019-10-16 14:32:16, Log.py, INFO, upload file complete testbak\2019-10-16\test04.txt
-2019-10-16 14:32:16, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 14:32:16, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 14:35:55, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 14:35:55, Log.py, INFO, upload file complete testbak\2019-10-16\test04.txt
-2019-10-16 14:35:55, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 14:36:51, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 14:36:51, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 14:36:51, Log.py, INFO, upload file complete testbak\2019-10-16\test04.txt
-2019-10-16 14:41:46, Log.py, INFO, upload file complete testbak\2019-10-16\test04.txt
-2019-10-16 14:41:46, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 14:41:46, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 14:47:56, Log.py, INFO, upload file complete testbak\2019-10-16\test04.txt
-2019-10-16 14:47:56, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 14:47:56, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 14:50:06, Log.py, INFO, upload file complete testbak\2019-10-16\test04.txt
-2019-10-16 14:50:06, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 14:50:06, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 15:00:45, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 15:00:45, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 15:00:45, Log.py, INFO, upload file complete testbak\2019-10-16\test04.txt
-2019-10-16 15:09:53, Log.py, INFO, upload file complete testbak\2019-10-16\test02.py
-2019-10-16 15:09:53, Log.py, INFO, upload file complete testbak\2019-10-16\test04.txt
-2019-10-16 15:09:53, Log.py, INFO, upload file complete testbak\2019-10-16\test03.py
-2019-10-16 15:30:44, Log.py, INFO, No file requires backup!!!
-2019-10-17 13:19:46, Log.py, INFO, No file requires backup!!!
-2019-10-17 13:21:00, Log.py, INFO, No file requires backup!!!
-2019-10-17 13:22:57, Log.py, ERROR, cannot connect 192.168.8.142:21
-2019-10-18 12:32:24, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:32:24, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:32:24, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:32:24, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:32:24, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:32:24, Log.py, ERROR, 'gbk' codec can't decode byte 0x9a in position 258: illegal multibyte sequence
-2019-10-18 12:32:25, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:32:25, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:32:25, Log.py, INFO, No file requires backup!!!
-2019-10-18 12:32:26, Log.py, ERROR, can only concatenate str (not "bytes") to str
-2019-10-18 12:33:53, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:33:53, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:33:53, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:33:53, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:33:53, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:33:53, Log.py, ERROR, 'gbk' codec can't decode byte 0x9a in position 258: illegal multibyte sequence
-2019-10-18 12:33:53, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:33:53, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:33:53, Log.py, INFO, No file requires backup!!!
-2019-10-18 12:33:53, Log.py, ERROR, can only concatenate str (not "bytes") to str
-2019-10-18 12:35:03, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:35:03, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:35:03, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:35:03, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:35:03, Log.py, ERROR, 'gbk' codec can't decode byte 0x9a in position 258: illegal multibyte sequence
-2019-10-18 12:35:03, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:35:03, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:35:03, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:35:03, Log.py, INFO, No file requires backup!!!
-2019-10-18 12:35:04, Log.py, ERROR, can only concatenate str (not "bytes") to str
-2019-10-18 12:35:15, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:35:15, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:35:15, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:35:15, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:35:15, Log.py, ERROR, 'gbk' codec can't decode byte 0x9a in position 258: illegal multibyte sequence
-2019-10-18 12:35:15, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:35:15, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:35:15, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:35:15, Log.py, INFO, No file requires backup!!!
-2019-10-18 12:35:16, Log.py, ERROR, can only concatenate str (not "bytes") to str
-2019-10-18 12:36:00, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:36:00, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:36:00, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:36:00, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:36:00, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:36:00, Log.py, ERROR, 'gbk' codec can't decode byte 0x9a in position 258: illegal multibyte sequence
-2019-10-18 12:36:00, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:36:00, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:36:00, Log.py, INFO, No file requires backup!!!
-2019-10-18 12:36:01, Log.py, ERROR, can only concatenate str (not "bytes") to str
-2019-10-18 12:37:41, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:37:41, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:37:41, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:37:41, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:37:41, Log.py, ERROR, 'gbk' codec can't decode byte 0x9a in position 258: illegal multibyte sequence
-2019-10-18 12:37:41, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:37:41, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:37:41, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:37:41, Log.py, INFO, No file requires backup!!!
-2019-10-18 12:37:42, Log.py, ERROR, can only concatenate str (not "bytes") to str
-2019-10-18 12:38:18, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:38:18, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:38:18, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:38:18, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:38:18, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:38:18, Log.py, ERROR, 'gbk' codec can't decode byte 0x9a in position 258: illegal multibyte sequence
-2019-10-18 12:38:18, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:38:18, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:38:18, Log.py, INFO, No file requires backup!!!
-2019-10-18 12:38:19, Log.py, ERROR, can only concatenate str (not "bytes") to str
-2019-10-18 12:40:31, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:40:31, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:40:31, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:40:31, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:40:31, Log.py, ERROR, 'gbk' codec can't decode byte 0x9a in position 258: illegal multibyte sequence
-2019-10-18 12:40:31, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:40:31, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:40:31, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:40:31, Log.py, INFO, No file requires backup!!!
-2019-10-18 12:44:34, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:44:34, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:44:34, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:44:34, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:44:34, Log.py, ERROR, 'gbk' codec can't decode byte 0x9a in position 258: illegal multibyte sequence
-2019-10-18 12:44:34, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:44:34, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:44:34, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:44:34, Log.py, INFO, No file requires backup!!!
-2019-10-18 12:44:35, Log.py, INFO, Mail sent successfully
-2019-10-18 12:46:06, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:46:06, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:46:06, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:46:06, Log.py, ERROR, 'gbk' codec can't decode byte 0x9a in position 258: illegal multibyte sequence
-2019-10-18 12:46:06, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:46:06, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:46:06, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:46:06, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:46:06, Log.py, INFO, No file requires backup!!!
-2019-10-18 12:46:07, Log.py, INFO, Mail sent successfully
-2019-10-18 12:47:47, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:47:47, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:47:47, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:47:47, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:47:47, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:47:47, Log.py, ERROR, 'gbk' codec can't decode byte 0x9a in position 258: illegal multibyte sequence
-2019-10-18 12:47:47, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:47:47, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:47:47, Log.py, INFO, No file requires backup!!!
-2019-10-18 12:47:48, Log.py, INFO, Mail sent successfully
-2019-10-18 12:49:45, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:49:45, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:49:45, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:49:45, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:49:45, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:49:45, Log.py, ERROR, 'gbk' codec can't decode byte 0x9a in position 258: illegal multibyte sequence
-2019-10-18 12:49:45, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:49:45, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:49:45, Log.py, INFO, No file requires backup!!!
-2019-10-18 12:51:23, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:51:23, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:51:23, Log.py, ERROR, Extra data: line 1 column 198 (char 197)
-2019-10-18 12:51:23, Log.py, INFO, Successfully created file testbak\2019-10-18
-2019-10-18 12:51:23, Log.py, INFO, upload file complete testbak\2019-10-18\profiles_settings.xml
-2019-10-18 12:51:23, Log.py, INFO, upload file complete testbak\2019-10-18\misc.xml
-2019-10-18 12:51:23, Log.py, INFO, upload file complete testbak\2019-10-18\test.iml
-2019-10-18 12:51:23, Log.py, INFO, upload file complete testbak\2019-10-18\test02.py
-2019-10-18 12:51:23, Log.py, INFO, upload file complete testbak\2019-10-18\workspace.xml
-2019-10-18 12:53:02, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:53:02, Log.py, INFO, upload file complete testbak\2019-10-18\modules.xml
-2019-10-18 12:53:02, Log.py, INFO, upload file complete testbak\2019-10-18\test02.py
-2019-10-18 12:53:02, Log.py, INFO, upload file complete testbak\2019-10-18\test04.txt
-2019-10-18 12:53:02, Log.py, INFO, upload file complete testbak\2019-10-18\test03.py
-2019-10-18 12:53:36, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:53:36, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:53:36, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:53:36, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:53:36, Log.py, INFO, upload file complete testbak\2019-10-18\profiles_settings.xml
-2019-10-18 12:53:36, Log.py, INFO, upload file complete testbak\2019-10-18\misc.xml
-2019-10-18 12:53:36, Log.py, INFO, upload file complete testbak\2019-10-18\test.iml
-2019-10-18 12:53:36, Log.py, INFO, upload file complete testbak\2019-10-18\workspace.xml
-2019-10-18 12:53:46, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:53:46, Log.py, INFO, upload file complete testbak\2019-10-18\modules.xml
-2019-10-18 12:53:46, Log.py, INFO, upload file complete testbak\2019-10-18\test03.py
-2019-10-18 12:53:46, Log.py, INFO, upload file complete testbak\2019-10-18\test02.py
-2019-10-18 12:53:46, Log.py, INFO, upload file complete testbak\2019-10-18\test.iml
-2019-10-18 12:53:50, Log.py, INFO, upload file complete testbak\2019-10-18\test04.txt
-2019-10-18 12:53:50, Log.py, INFO, upload file complete testbak\2019-10-18\test02.py
-2019-10-18 12:53:52, Log.py, INFO, No file requires backup!!!
-2019-10-18 12:56:29, Log.py, ERROR, Extra data: line 1 column 198 (char 197)
-2019-10-18 12:56:29, Log.py, INFO, upload file complete testbak\2019-10-18\profiles_settings.xml
-2019-10-18 12:56:29, Log.py, INFO, upload file complete testbak\2019-10-18\test.iml
-2019-10-18 12:56:29, Log.py, INFO, upload file complete testbak\2019-10-18\misc.xml
-2019-10-18 12:56:29, Log.py, INFO, upload file complete testbak\2019-10-18\modules.xml
-2019-10-18 12:56:29, Log.py, INFO, upload file complete testbak\2019-10-18\test02.py
-2019-10-18 12:56:29, Log.py, INFO, upload file complete testbak\2019-10-18\workspace.xml
-2019-10-18 12:56:29, Log.py, INFO, upload file complete testbak\2019-10-18\test04.txt
-2019-10-18 12:58:09, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:58:09, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:58:09, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:58:09, Log.py, ERROR, Extra data: line 1 column 153 (char 152)
-2019-10-18 12:58:09, Log.py, INFO, upload file complete testbak\2019-10-18\profiles_settings.xml
-2019-10-18 12:58:09, Log.py, INFO, upload file complete testbak\2019-10-18\test04.txt
-2019-10-18 12:58:09, Log.py, INFO, upload file complete testbak\2019-10-18\test.iml
-2019-10-18 12:58:09, Log.py, INFO, upload file complete testbak\2019-10-18\workspace.xml
-2019-10-18 12:58:59, Log.py, ERROR, Expecting value: line 1 column 1 (char 0)
-2019-10-18 12:58:59, Log.py, ERROR, Extra data: line 1 column 153 (char 152)
-2019-10-18 12:58:59, Log.py, ERROR, Extra data: line 1 column 153 (char 152)
-2019-10-18 12:58:59, Log.py, INFO, upload file complete testbak\2019-10-18\profiles_settings.xml
-2019-10-18 12:58:59, Log.py, INFO, upload file complete testbak\2019-10-18\misc.xml
-2019-10-18 12:58:59, Log.py, INFO, upload file complete testbak\2019-10-18\test.iml
-2019-10-18 12:58:59, Log.py, INFO, upload file complete testbak\2019-10-18\workspace.xml
-2019-10-18 12:58:59, Log.py, INFO, upload file complete testbak\2019-10-18\test02.py
-2019-10-18 13:11:06, Log.py, INFO, upload file complete testbak\2019-10-18\misc.xml
-2019-10-18 13:11:06, Log.py, INFO, upload file complete testbak\2019-10-18\modules.xml
-2019-10-18 13:11:06, Log.py, INFO, upload file complete testbak\2019-10-18\profiles_settings.xml
-2019-10-18 13:11:06, Log.py, INFO, upload file complete testbak\2019-10-18\test.iml
-2019-10-18 13:11:06, Log.py, INFO, upload file complete testbak\2019-10-18\workspace.xml
-2019-10-18 13:11:06, Log.py, INFO, upload file complete testbak\2019-10-18\test02.py
-2019-10-18 13:11:06, Log.py, INFO, upload file complete testbak\2019-10-18\test03.py
-2019-10-18 13:11:06, Log.py, INFO, upload file complete testbak\2019-10-18\test04.txt
-2019-10-18 13:44:24, Log.py, INFO, upload file complete testbak\2019-10-18\test03.py
-2019-10-18 13:44:24, Log.py, INFO, upload file complete testbak\2019-10-18\test02.py
-2019-10-18 13:44:30, Log.py, INFO, No file requires backup!!!
-2019-10-18 13:49:33, Log.py, INFO, No file requires backup!!!
-2019-10-18 13:50:06, Log.py, INFO, No file requires backup!!!
-2019-10-18 14:10:55, Log.py, INFO, No file requires backup!!!
-2019-10-18 14:11:05, Log.py, INFO, upload file complete testbak\2019-10-18\test03.py
-2019-10-18 14:11:05, Log.py, INFO, upload file complete testbak\2019-10-18\test02.py
+2019-10-18 17:40:08, Log.py, INFO, upload file complete testbak\2019-10-18\profiles_settings.xml
+2019-10-18 17:40:08, Log.py, INFO, upload file complete testbak\2019-10-18\misc.xml
+2019-10-18 17:40:08, Log.py, INFO, upload file complete testbak\2019-10-18\modules.xml
+2019-10-18 17:40:08, Log.py, INFO, upload file complete testbak\2019-10-18\qqq.txt
+2019-10-18 17:40:08, Log.py, INFO, upload file complete testbak\2019-10-18\test.iml
+2019-10-18 17:40:08, Log.py, INFO, upload file complete testbak\2019-10-18\workspace.xml
+2019-10-18 17:40:08, Log.py, INFO, upload file complete testbak\2019-10-18\test03.py
+2019-10-18 17:40:08, Log.py, INFO, upload file complete testbak\2019-10-18\test02.py
+2019-10-18 17:40:08, Log.py, INFO, upload file complete testbak\2019-10-18\test5.py
+2019-10-18 17:40:14, Log.py, INFO, No file requires backup!!!
+2019-10-18 17:40:55, Log.py, INFO, upload file complete testbak\2019-10-18\test.txt
+2019-10-18 17:46:56, Log.py, INFO, upload file complete testbak\2019-10-18\profiles_settings.xml
+2019-10-18 17:46:56, Log.py, INFO, upload file complete testbak\2019-10-18\qqq.txt
+2019-10-18 17:46:56, Log.py, INFO, upload file complete testbak\2019-10-18\misc.xml
+2019-10-18 17:46:56, Log.py, INFO, upload file complete testbak\2019-10-18\test.iml
+2019-10-18 17:46:56, Log.py, INFO, upload file complete testbak\2019-10-18\modules.xml
+2019-10-18 17:46:56, Log.py, INFO, upload file complete testbak\2019-10-18\workspace.xml
+2019-10-18 17:46:56, Log.py, INFO, upload file complete testbak\2019-10-18\test.txt
+2019-10-18 17:46:56, Log.py, INFO, upload file complete testbak\2019-10-18\test03.py
+2019-10-18 17:46:56, Log.py, INFO, upload file complete testbak\2019-10-18\test02.py
+2019-10-18 17:46:56, Log.py, INFO, upload file complete testbak\2019-10-18\test5.py
+2019-10-18 17:47:29, Log.py, INFO, upload file complete testbak\2019-10-18\profiles_settings.xml
+2019-10-18 17:47:29, Log.py, INFO, upload file complete testbak\2019-10-18\misc.xml
+2019-10-18 17:47:29, Log.py, INFO, upload file complete testbak\2019-10-18\modules.xml
+2019-10-18 17:47:29, Log.py, INFO, upload file complete testbak\2019-10-18\test.txt
+2019-10-18 17:47:29, Log.py, INFO, upload file complete testbak\2019-10-18\test.iml
+2019-10-18 17:47:29, Log.py, INFO, upload file complete testbak\2019-10-18\qqq.txt
+2019-10-18 17:47:29, Log.py, INFO, upload file complete testbak\2019-10-18\test03.py
+2019-10-18 17:47:29, Log.py, INFO, upload file complete testbak\2019-10-18\workspace.xml
+2019-10-18 17:47:29, Log.py, INFO, upload file complete testbak\2019-10-18\test02.py
+2019-10-18 17:47:29, Log.py, INFO, upload file complete testbak\2019-10-18\test5.py
+2019-10-18 17:47:29, Log.py, INFO, 本次备份用时0:00:00.097606
+2019-10-18 17:50:28, Log.py, INFO, upload file complete testbak\2019-10-18\jdk-7u51-windows-i586.exe
+2019-10-18 17:50:28, Log.py, INFO, Time for this backup 0:00:40.892774

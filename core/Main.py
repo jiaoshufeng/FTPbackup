@@ -6,39 +6,21 @@ from core.Ftp import Ftpclient
 from log.Log import log_info
 import os, datetime, json
 
-newfilelist = []
+
+def foo(func):
+    def times():
+        start_time = datetime.datetime.now()
+        func()
+        end_time = datetime.datetime.now()
+        duration = end_time - start_time
+        pub("Time for this backup %s" % duration)
+
+    return times
 
 
 def pub(message, level='info'):
     print(message)
     log_info(message, level)
-
-
-
-def filter_theadpool(func, file_list, historyfiledic):
-    """
-    通过线程池对历史上传数据进行过滤
-    :param func:
-    :param file_list:
-    :param historyfiledic:
-    :return:
-    """
-    pool = ThreadPoolExecutor(FilterTheadpoolNum)
-    for file in file_list:
-        pool.submit(func, file, historyfiledic)
-    pool.shutdown()
-
-
-def filter(file, historyfiledic):
-    """
-    对备份文件进行过滤避免重复上传，只上传新增的文件
-    :return:newfilelist
-    """
-    if file in historyfiledic['historylist']:
-        pass
-    else:
-        newfilelist.append(file)
-        historyfiledic['historylist'].append(file)
 
 
 def ftp_theadpool(func, file_list, remotedirname):
@@ -54,34 +36,14 @@ def ftp_theadpool(func, file_list, remotedirname):
         pool.submit(func, os.path.join(remotedirname, filename), localpath)
     pool.shutdown()
 
-
-def fullback():
-    """
-    判断是否进行全备
-    :param:historyfilepath
-    :return:
-    """
-    d = datetime.datetime.now()
-    weekday = d.weekday()
-    historyfilepath = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'conf', 'historyfile.json')
-    if weekday == FULLWEEKDAY:
-        with open(historyfilepath, 'w') as historyfilename:
-            json.dump({"historylist": []}, historyfilename)
-    dirpath = Backup()
-    file_list = dirpath.file_list(BACKUPDIR)
-    with open(historyfilepath, 'r') as historyfilename:
-        historyfiledic = json.load(historyfilename)
-    filter_theadpool(filter, file_list, historyfiledic)
-    with open(historyfilepath, 'w') as historyfilename2:
-        json.dump(historyfiledic, historyfilename2)
-
-
+@foo
 def start():
     """
     主进程函数
     :return:
     """
-    fullback()
+    backup = Backup()
+    newfilelist = backup.newfilelist
     ftpclient = Ftpclient()
     message_list = []
     try:
@@ -95,8 +57,7 @@ def start():
                 remotedirname = os.path.join(REMOTEPATH, dirname)
                 if dirname not in filelist:  # 创建目录
                     res = ftpclient.ftpconnect.get('info').mkd(remotedirname)
-                    log_info('Successfully created file %s' % res)
-                    print('Successfully created file', res)
+                    pub('Successfully created file %s' % res)
                 ftp_theadpool(ftpclient.uploadfile, newfilelist, remotedirname)
                 pwd_path = ftpclient.ftpconnect.get('info').nlst(remotedirname)
                 for localpath in newfilelist:
@@ -118,4 +79,4 @@ def start():
         send_message(message_list)
         # print(message_list)
     except Exception as e:
-        pub(e,'error')
+        pub(e, 'error')
