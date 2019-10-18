@@ -1,4 +1,4 @@
-#########备份目录配置###########
+#########备份基本配置###########
 # 本地要进行备份的目录
 BACKUPDIR = r'D:\python\脚本\test'
 # 远程备份目录
@@ -6,6 +6,10 @@ REMOTEPATH = 'testbak'
 #设置全备日期（周）
 """0:周日，1：周一，2：周二.....6:周六"""
 FULLWEEKDAY = 0
+#filter_theadpool线程池数量
+FilterTheadpoolNum = 10
+#ftp_theadpool线程池数量
+FtpTheadpoolNum = 10
 
 ##########日志文件配置###########
 """
@@ -18,18 +22,18 @@ LOGFILEPATH = ''
 
 ##########FTP配置###############
 # 主机ip
-HOSTIP = '192.168.8.142'
+HOSTIP = ''
 # FTP用户名
-USERNAME = 'administrator'
+USERNAME = ''
 # FTP密码
-PASSWORD = 'Wandu2017'
+PASSWORD = ''
 # 端口号
 PORT = 21
 
 ###########邮箱服务器############
 # 设置服务器所需信息
 """是否开启邮箱配置"""
-EMAIL = True
+EMAIL = 0
 # 163邮箱服务器地址
 mail_host = "smtp.163.com"
 # 163用户名
