@@ -57,7 +57,7 @@ class Backup:
         d = datetime.datetime.now()
         weekday = d.weekday()
         historyfilepath = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'conf', 'historyfile.json')
-        if weekday == FULLWEEKDAY:
+        if weekday in FULLWEEKDAY:
             with open(historyfilepath, 'w') as historyfilename:
                 json.dump({"historylist": []}, historyfilename)
         with open(historyfilepath, 'r') as historyfilename:

@@ -4,8 +4,16 @@ BACKUPDIR = r'D:\python\脚本\test'
 # 远程备份目录
 REMOTEPATH = 'testbak'
 #设置全备日期（周）
-"""0:周日，1：周一，2：周二.....6:周六"""
-FULLWEEKDAY = 0
+"""
+0: '星期一',
+1: '星期二',
+2: '星期三',
+3: '星期四',
+4: '星期五',
+5: '星期六',
+6: '星期日',
+"""
+FULLWEEKDAY = [6,2]
 #filter_theadpool线程池数量
 FilterTheadpoolNum = 10
 #ftp_theadpool线程池数量
