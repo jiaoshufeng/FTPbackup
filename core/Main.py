@@ -1,9 +1,8 @@
 from conf.setting import *
 from core.filelist import Backup
-from core.public import send_message
+from core.public import send_message,pub
 from concurrent.futures import ThreadPoolExecutor
 from core.Ftp import Ftpclient
-from log.Log import log_info
 import os, datetime, json
 
 
@@ -17,10 +16,6 @@ def foo(func):
 
     return times
 
-
-def pub(message, level='info'):
-    print(message)
-    log_info(message, level)
 
 
 def ftp_theadpool(func, file_list, remotedirname):
@@ -42,16 +37,16 @@ def start():
     主进程函数
     :return:
     """
-    backup = Backup()
-    newfilelist = backup.newfilelist
     ftpclient = Ftpclient()
     message_list = []
     try:
-        if newfilelist == []:
-            pub('No file requires backup!!!')
-            message_list = [{'name': 'info', 'info': 'No file requires backup!!!'}]
-        else:
-            if ftpclient.ftpconnect.get('status'):
+        if ftpclient.ftpconnect.get('status'):
+            backup = Backup()
+            newfilelist = backup.newfilelist
+            if newfilelist == []:
+                pub('No file requires backup!!!')
+                message_list = [{'name': 'info', 'info': 'No file requires backup!!!'}]
+            else:
                 filelist = ftpclient.ftpconnect.get('info').nlst(REMOTEPATH)
                 dirname = str(datetime.date.today())
                 remotedirname = os.path.join(REMOTEPATH, dirname)
@@ -72,10 +67,10 @@ def start():
                         message['info'] = " Upload failed"
                         message_list.append(message)
                 # message_list.append({'name': '远程备份目录列表', 'info': '、'.join(pwd_path)})
-                ftpclient.ftpconnect.get('info').quit()
-            else:
-                message_list = [{'name': 'ERROR', 'info': ftpclient.ftpconnect.get('info')}]
-                pub(ftpclient.ftpconnect.get('info'), 'error')
+            ftpclient.ftpconnect.get('info').quit()
+        else:
+            message_list = [{'name': 'ERROR', 'info': ftpclient.ftpconnect.get('info')}]
+            pub(ftpclient.ftpconnect.get('info'), 'error')
         send_message(message_list)
         # print(message_list)
     except Exception as e:

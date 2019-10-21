@@ -1,13 +1,22 @@
 import os, datetime, json
 from conf.setting import *
 from concurrent.futures import ThreadPoolExecutor
-
+import hashlib
+from core.public import pub
 
 class Backup:
     newfilelist = []
 
     def __init__(self):
         self.fullback()
+
+    def getmd5(self, file):
+        m = hashlib.md5()
+        with open(file, 'rb') as f:
+            for line in f:
+                m.update(line)
+        md5code = m.hexdigest()
+        return {'path': file, 'md5': md5code}
 
     def file_list(self, backdir, filelist=[]):
         """
@@ -34,19 +43,20 @@ class Backup:
         """
         pool = ThreadPoolExecutor(FilterTheadpoolNum)
         for file in file_list:
-            pool.submit(func, file, historyfiledic)
+            files = self.getmd5(file)
+            pool.submit(func, files, historyfiledic)
         pool.shutdown()
 
-    def filter(self, file, historyfiledic):
+    def filter(self, files, historyfiledic):
         """
         对备份文件进行过滤避免重复上传，只上传新增的文件
         :return:newfilelist
         """
-        if file in historyfiledic['historylist']:
+        if files in historyfiledic['historylist']:
             pass
         else:
-            self.newfilelist.append(file)
-            historyfiledic['historylist'].append(file)
+            self.newfilelist.append(files['path'])
+            historyfiledic['historylist'].append(files)
 
     def fullback(self):
         """
@@ -54,14 +64,17 @@ class Backup:
         :param:historyfilepath
         :return:
         """
-        d = datetime.datetime.now()
-        weekday = d.weekday()
-        historyfilepath = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'conf', 'historyfile.json')
-        if weekday in FULLWEEKDAY:
-            with open(historyfilepath, 'w') as historyfilename:
-                json.dump({"historylist": []}, historyfilename)
-        with open(historyfilepath, 'r') as historyfilename:
-            historyfiledic = json.load(historyfilename)
-        self.filter_theadpool(self.filter, self.file_list(BACKUPDIR), historyfiledic)
-        with open(historyfilepath, 'w') as historyfilename2:
-            json.dump(historyfiledic, historyfilename2)
+        try:
+            d = datetime.datetime.now()
+            weekday = d.weekday()
+            historyfilepath = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'conf', 'historyfile.json')
+            if weekday in FULLWEEKDAY:
+                with open(historyfilepath, 'w') as historyfilename:
+                    json.dump({"historylist": []}, historyfilename)
+            with open(historyfilepath, 'r') as historyfilename:
+                historyfiledic = json.load(historyfilename)
+            self.filter_theadpool(self.filter, self.file_list(BACKUPDIR), historyfiledic)
+            with open(historyfilepath, 'w') as historyfilename2:
+                json.dump(historyfiledic, historyfilename2)
+        except Exception as e:
+            pub(e,'error')

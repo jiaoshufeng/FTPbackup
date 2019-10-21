@@ -27,3 +27,7 @@ def send_message(message_list):
         dingtalk = DingTalk
         ret = dingtalk.send(message_list)
         log_info(ret)
+
+def pub(message, level='info'):
+    print(message)
+    log_info(message, level)
