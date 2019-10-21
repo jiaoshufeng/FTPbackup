@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/windows_backup.iml" filepath="$PROJECT_DIR$/.idea/windows_backup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/FTPbackup.iml" filepath="$PROJECT_DIR$/.idea/FTPbackup.iml" />
     </modules>
   </component>
 </project>

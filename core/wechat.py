@@ -41,7 +41,7 @@ class Wechat:
             "msgtype": "text",  # 消息类型。
             "agentid": self.agentid,  # 企业号中的应用id。
             "text": {
-                "content": 'FTP备份上传回执信息：' + '\n' + message
+                "content": 'FTP备份信息通知：' + '\n' + message
             },
             "safe": "0"
         }

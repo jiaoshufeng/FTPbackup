@@ -1,8 +1,8 @@
 #########备份基本配置###########
 # 本地要进行备份的目录
-BACKUPDIR = r'D:\python\脚本\test'
+BACKUPDIR = r'D:\softbak\jdk1.7.x64'
 # 远程备份目录
-REMOTEPATH = 'testbak'
+REMOTEPATH = 'jdk'
 #设置全备日期（周）
 """
 0: '星期一',
@@ -13,9 +13,7 @@ REMOTEPATH = 'testbak'
 5: '星期六',
 6: '星期日',
 """
-FULLWEEKDAY = [6,2]
-#filter_theadpool线程池数量
-FilterTheadpoolNum = 10
+FULLWEEKDAY = [0,2]
 #ftp_theadpool线程池数量
 FtpTheadpoolNum = 10
 

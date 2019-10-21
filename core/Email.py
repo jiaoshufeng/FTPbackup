@@ -15,12 +15,12 @@ class Mymail:
 
     def message(self, message_list):
         mail_msg = """
-            <div><span>标题:FTP上传回执邮件</span></div>
-            <div><span>信息:%s</span></div>
+            <div><span>标题:FTP备份通知</span></div>
+            <div><span>%s</span></div>
             """ % (message_list)
         message = MIMEText(mail_msg, 'html', 'utf-8')
         # 邮件主题
-        message['Subject'] = 'FTP上传回执邮件'
+        message['Subject'] = 'FTP备份通知消息'
         # 发送方信息
         message['From'] = self.sender
         # 接受方信息
