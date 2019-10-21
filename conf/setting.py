@@ -1,9 +1,11 @@
 #########备份基本配置###########
-# 本地要进行备份的目录
-BACKUPDIR = r'D:\softbak\jdk1.7.x64'
+# 本地要进行备份的目录(每个路径前利用r将路径转义，避免/n，/t等特殊用法)
+BACKUPDIR = r'D:\test'
 # 远程备份目录
-REMOTEPATH = 'jdk'
-#设置全备日期（周）
+REMOTEPATH = 'test111'
+# 排除的目录或者文件(每个路径前利用r将路径转义，避免/n，/t等特殊用法)
+EXCLUDE = [r'D:\test\qqq', r'D:\test\test.txt']
+# 设置全备日期（周）
 """
 0: '星期一',
 1: '星期二',
@@ -13,8 +15,8 @@ REMOTEPATH = 'jdk'
 5: '星期六',
 6: '星期日',
 """
-FULLWEEKDAY = [0,2]
-#ftp_theadpool线程池数量
+FULLWEEKDAY = [0, 2]
+# ftp_theadpool线程池数量
 FtpTheadpoolNum = 10
 
 ##########日志文件配置###########
@@ -28,11 +30,11 @@ LOGFILEPATH = ''
 
 ##########FTP配置###############
 # 主机ip
-HOSTIP = ''
+HOSTIP = '192.168.8.142'
 # FTP用户名
-USERNAME = ''
+USERNAME = 'administrator'
 # FTP密码
-PASSWORD = ''
+PASSWORD = 'Wandu2017'
 # 端口号
 PORT = 21
 
@@ -57,7 +59,6 @@ corpid = ''
 corpsecret = ''
 touser = []
 agentid = ''
-
 
 ###########钉钉机器人配置##########
 DINGTALK = False
