@@ -2,19 +2,7 @@ from conf.setting import *
 from core.public import send_message, pub
 from concurrent.futures import ThreadPoolExecutor
 from core.Ftp import Ftpclient
-import os, datetime
-
-
-def ftp_theadpool(func, src, item):
-    """
-    通过线程池调用上传文件列表
-    :param func:
-    :param file_list:
-    :return:
-    """
-    pool = ThreadPoolExecutor(FtpTheadpoolNum)
-    pool.submit(func, src, item)
-    pool.shutdown()
+import os, datetime, time
 
 
 def upload_files(ftpclient, localdir, remotedir):
@@ -36,7 +24,7 @@ def upload_files(ftpclient, localdir, remotedir):
     for item in localnames:
         src = os.path.join(localdir, item)
         if src in EXCLUDE:
-            # 增加排除目录
+            # 增加排除目录或文件
             continue
         if os.path.isdir(src):
             try:
@@ -45,9 +33,23 @@ def upload_files(ftpclient, localdir, remotedir):
                 pass
             upload_files(ftpclient, src, item)
         else:
-            ftp_theadpool(ftpclient.upload_file, src, item)
+            ftpclient.upload_file(src, item)
     ftpclient.ftp.cwd('..')
 
+
+def filelistpath(ftpclient):
+    try:
+        for pathlist in BACKUPDIR:
+            localdir = pathlist['localpath']
+            remotedir = pathlist['remotepath']
+            if not remotedir:
+                remotedir = os.path.split(localdir)[-1]
+            upload_files(ftpclient, localdir, remotedir)
+        return 1
+    except:
+        pub('Check that the configuration file is correct','error')
+        send_message('Check that the configuration file is correct')
+        return 0
 
 def start():
     """
@@ -58,20 +60,17 @@ def start():
         ftpclient = Ftpclient()
         if ftpclient.ftpconnect.get('status'):
             start_time = datetime.datetime.now()
-            upload_files(ftpclient, localdir=BACKUPDIR, remotedir=REMOTEPATH)
+            ret = filelistpath(ftpclient)
             end_time = datetime.datetime.now()
             duration = end_time - start_time
             pub("Time for this backup %ss" % duration.seconds)
-            if ftpclient.filelist == []:
-                send_message('本次备份文件列表详情:\n' + '没有需要备份的文件')
-                print('本次备份文件列表详情:\n' + '没有需要备份的文件')
-            else:
+            if ret:
                 send_message(
-                    '本次备份文件列表详情:\n备份成功，本次共备份%s个文件,耗时%ss。\n%s' % (
-                        len(ftpclient.filelist), duration.seconds, ','.join(ftpclient.filelist)))
+                    '本次备份文件列表详情:\n备份成功，本次共备份%s个文件,耗时%ss。' % (
+                        len(ftpclient.filelist), duration.seconds))
                 print(
-                    '本次备份文件列表详情:\n备份成功，本次共备份%s个文件,耗时%ss。\n%s' % (
-                        len(ftpclient.filelist), duration.seconds, ','.join(ftpclient.filelist)))
+                    '本次备份文件列表详情:\n备份成功，本次共备份%s个文件,耗时%ss。' % (
+                        len(ftpclient.filelist), duration.seconds))
         else:
             pub(ftpclient.ftpconnect.get('info'), 'error')
             send_message('ERROR' + ftpclient.ftpconnect.get('info'))

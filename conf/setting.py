@@ -1,8 +1,19 @@
 #########备份基本配置###########
 # 本地要进行备份的目录(每个路径前利用r将路径转义，避免/n，/t等特殊用法)
-BACKUPDIR = r'D:\test'
-# 远程备份目录
-REMOTEPATH = 'test111'
+# 备份目录为列表格式，可设置多个本地备份路径
+# 每一个目录的配置为字典类型{"localpath":本地路径,"remotepath":远程路径}
+"""
+示例
+BACKUPDIR = [
+    {"localpath": r"D:\Youdao", "remotepath": "Youdao"},
+    {"localpath": r"D:\softbak\kwifi", "remotepath": "kwifi"},
+]
+"""
+BACKUPDIR = [
+    {"localpath": r"D:\Youdao", "remotepath": ""},
+    {"localpath": r"", "remotepath": ""},
+]
+
 # 排除的目录或者文件(每个路径前利用r将路径转义，避免/n，/t等特殊用法)
 EXCLUDE = [r'D:\test\qqq', r'D:\test\test.txt']
 # 设置全备日期（周）
@@ -15,7 +26,7 @@ EXCLUDE = [r'D:\test\qqq', r'D:\test\test.txt']
 5: '星期六',
 6: '星期日',
 """
-FULLWEEKDAY = [0, 2]
+FULLWEEKDAY = [6, 2]
 # ftp_theadpool线程池数量
 FtpTheadpoolNum = 10
 
@@ -30,11 +41,11 @@ LOGFILEPATH = ''
 
 ##########FTP配置###############
 # 主机ip
-HOSTIP = '192.168.8.142'
+HOSTIP = ''
 # FTP用户名
-USERNAME = 'administrator'
+USERNAME = ''
 # FTP密码
-PASSWORD = 'Wandu2017'
+PASSWORD = ''
 # 端口号
 PORT = 21
 
