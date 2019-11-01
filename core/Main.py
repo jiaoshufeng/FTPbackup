@@ -1,8 +1,7 @@
 from conf.setting import *
 from core.public import send_message, pub
-from concurrent.futures import ThreadPoolExecutor
 from core.Ftp import Ftpclient
-import os, datetime, time
+import os, datetime
 
 
 def upload_files(ftpclient, localdir, remotedir):
