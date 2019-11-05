@@ -27,8 +27,6 @@ EXCLUDE = [r'D:\test\qqq', r'D:\test\test.txt']
 6: '星期日',
 """
 FULLWEEKDAY = [6, 2]
-# ftp_theadpool线程池数量
-FtpTheadpoolNum = 10
 
 ##########日志文件配置###########
 """
