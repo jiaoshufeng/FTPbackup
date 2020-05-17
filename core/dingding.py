@@ -3,7 +3,9 @@ from conf.setting import *
 
 
 class DingTalk:
-
+    """
+    封装一个钉钉自定义机器人的类
+    """
     def __init__(self):
         self.url = webhook
         self.headers = {
@@ -12,6 +14,11 @@ class DingTalk:
         }
 
     def send(self, content):
+        """
+        发送信息
+        :param content: 消息文本内容
+        :return: 回执
+        """
         msg = {
             "msgtype": "text",
             "text": {

@@ -6,7 +6,7 @@ import os, datetime
 
 def upload_files(ftpclient, localdir, remotedir):
     """
-    递归目录
+    上传文件到ftp服务器
     :param ftpclient:
     :param localdir:
     :param remotedir:
@@ -37,6 +37,11 @@ def upload_files(ftpclient, localdir, remotedir):
 
 
 def filelistpath(ftpclient):
+    """
+    递归获取本地所有目录路径
+    :param ftpclient:
+    :return:
+    """
     try:
         for pathlist in BACKUPDIR:
             localdir = pathlist['localpath']

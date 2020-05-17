@@ -4,9 +4,10 @@ from conf.setting import *
 
 
 class Mymail:
-
+    """
+    封装一个邮件的类
+    """
     def __init__(self):
-
         self.mail_host = mail_host
         self.mail_user = mail_user
         self.mail_pass = mail_pass
@@ -14,6 +15,11 @@ class Mymail:
         self.receivers = receivers
 
     def message(self, message_list):
+        """
+        对消息列表进行格式化处理
+        :param message_list:接受到的消息列表
+        :return: message
+        """
         mail_msg = """
             <div><span>标题:FTP备份通知</span></div>
             <div><span>%s</span></div>
@@ -28,6 +34,11 @@ class Mymail:
         return message
 
     def send_to(self, message_list):
+        """
+        发送消息
+        :param message_list:
+        :return: 回执
+        """
         try:
             # 连接到服务器
             smtpObj = smtplib.SMTP_SSL(mail_host)

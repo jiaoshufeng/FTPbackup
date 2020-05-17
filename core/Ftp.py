@@ -17,6 +17,10 @@ class Ftpclient:
 
     @property
     def ftpconnect(self):
+        """
+        连接FTP服务器
+        :return:
+        """
         # ftp.set_debuglevel(2) #打开调试级别2，显示详细信息
         self.ftp.encoding = 'utf-8'  # 解决中文编码问题，默认是latin-1
         try:
@@ -31,6 +35,12 @@ class Ftpclient:
 
 
     def is_same_size(self, localfile, remotefile):
+        """
+        对比本地文件和远程文件是否一致，根据返回值进行判断是否更新备份，1、不更新 0、更新
+        :param localfile:
+        :param remotefile:
+        :return:
+        """
         try:
             remotefile_size = self.ftp.size(remotefile)
         except:
@@ -47,6 +57,12 @@ class Ftpclient:
             return 0
 
     def upload_file(self, localfile, remotefile):
+        """
+        将本地文件上传至FTP服务器
+        :param localfile: 本地文件
+        :param remotefile: 远程文件
+        :return:
+        """
         if not os.path.isfile(localfile):
             return
         if self.is_same_size(localfile, remotefile):

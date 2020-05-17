@@ -24,5 +24,11 @@ def send_message(message):
         pub(ret)
 
 def pub(message, level='info'):
+    """
+
+    :param message:
+    :param level:
+    :return:
+    """
     print(message)
     log_info(message, level)

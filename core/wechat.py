@@ -6,6 +6,13 @@ import json
 
 class Wechat:
     def __init__(self):
+        """
+        corpid:企业微信的corpi
+        corpsecret：企业微信的corpsecret
+        touser：通知的用户
+        agentid：应用的id
+        filepath:文件路径
+        """
         self.corpid = corpid
         self.corpsecret = corpsecret
         self.touser = '|'.join(touser)
@@ -14,6 +21,10 @@ class Wechat:
 
     @property
     def get_access_token(self):
+        """
+        获取access_token
+        :return: access_token
+        """
         get_url = 'https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=%s&corpsecret=%s' % (
             self.corpid, self.corpsecret)
         ret = requests.get(get_url, verify=False).json()
@@ -27,6 +38,10 @@ class Wechat:
             return Token
 
     def send_message(self, message):
+        """
+        :param message: 发送的消息
+        :return: 回执
+        """
         try:
             file = open(self.filepath, 'r')
             Token = json.load(file).get('access_token')
