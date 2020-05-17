@@ -17,6 +17,7 @@ class Mymail:
     def message(self, message_list):
         """
         对消息列表进行格式化处理
+        11
         :param message_list:接受到的消息列表
         :return: message
         """
