@@ -51,9 +51,10 @@ def filelistpath(ftpclient):
             upload_files(ftpclient, localdir, remotedir)
         return 1
     except:
-        pub('Check that the configuration file is correct','error')
+        pub('Check that the configuration file is correct', 'error')
         send_message('Check that the configuration file is correct')
         return 0
+
 
 def start():
     """

@@ -17,7 +17,7 @@ def log_info(message, level='info'):
 
                         datefmt='%Y-%m-%d %H:%M:%S',
 
-                        filename=os.path.join(logpath, 'log.txt'),
+                        filename=os.path.join(logpath, 'ftpserver.log'),
 
                         filemode='a')
 
